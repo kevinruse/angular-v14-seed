@@ -15,5 +15,9 @@
 </style>
 <header>
   <img src="../../assets/images/seed-icon.png" alt="" />
-  <h1>{{ title }}, {{ userName }}!</h1>
+  <h1>
+    Welcome {{ user.registered ? "back" : "" }} to Angular Seed{{
+      user.registered ? ", " + user.name : ""
+    }}!
+  </h1>
 </header>
