@@ -7,11 +7,11 @@ import { HeaderComponent } from './header/header.component';
 
 import { FormInputComponent } from './form-input/form-input.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 
 @NgModule({
-  imports: [BrowserModule, FontAwesomeModule, FormsModule],
+  imports: [BrowserModule, FontAwesomeModule, FormsModule, ReactiveFormsModule],
   declarations: [
     AppComponent,
     ChildComponent,
