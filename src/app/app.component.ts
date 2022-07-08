@@ -37,7 +37,23 @@ export class AppComponent {
     console.log(this.childView.fruitStatus);
   }
 
+  setStylePreference(value: string): void {
+    this.stylePreference = value;
+  }
+
+  setImportance(): Object {
+    let importance: Object = new Object();
+    if (this.stylePreference === 'hilite') {
+      importance = { 'background-color': 'yellow' };
+    } else if (this.stylePreference === 'caps') {
+      importance = { 'text-transform': 'uppercase' };
+    }
+    return importance;
+  }
+
   loggedIn: boolean = false;
+
+  stylePreference!: string;
 
   logIn(evt: boolean): void {
     console.log(evt);
