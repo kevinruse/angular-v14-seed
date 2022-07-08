@@ -37,11 +37,12 @@ export class AppComponent {
     console.log(this.childView.fruitStatus);
   }
 
-  loggedIn!: boolean;
+  loggedIn: boolean = false;
 
   logIn(evt: boolean): void {
     console.log(evt);
     this.loggedIn = evt;
+    this.user.registered = !this.user.registered;
   }
 
   user = {
