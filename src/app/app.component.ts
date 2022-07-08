@@ -8,6 +8,13 @@ import { Component } from '@angular/core';
   encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
+  loggedIn!: boolean;
+
+  logIn(evt: boolean): void {
+    console.log(evt);
+    this.loggedIn = evt;
+  }
+
   user = {
     id: 1,
     name: 'Kevin',
