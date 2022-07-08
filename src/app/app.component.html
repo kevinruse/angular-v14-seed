@@ -1,6 +1,7 @@
 <div>
   <app-header [user]="user"></app-header>
-  <section *ngIf="!user.registered">
+  <app-login></app-login>
+  <!--  <section *ngIf="!user.registered">
     <img src="../assets/images/chooseMyPlate.gov.png" />
   </section>
   <section *ngIf="user.registered">
@@ -22,12 +23,12 @@
     style="transform: scale(1.5)"
     (click)="setStylePreference('caps')"
   />
-  <label for="importantCaps">Caps</label>
+  <label for="importantCaps">Caps</label> -->
   <!--   <button (click)="addFruit()">Add a serving of fruit</button>
   <h2>Fruit Counter: <span #fruit></span></h2>
  -->
 
-  <div [ngSwitch]="loggedIn">
+  <!--  <div [ngSwitch]="loggedIn">
     <p>
       Logged In:
       <span *ngSwitchCase="false" class="notRegistered">{{ loggedIn }}</span>
@@ -35,7 +36,7 @@
       <span *ngSwitchDefault>Default Text Goes Here</span>
     </p>
   </div>
-  <app-child (login)="logIn($event)"></app-child>
+  <app-child (login)="logIn($event)"></app-child> -->
   <!-- <p>The App is working!</p> -->
   <!-- <form class="caution"> -->
   <!--   <app-form-input icon="envelope">
