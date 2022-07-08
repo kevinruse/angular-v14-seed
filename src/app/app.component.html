@@ -6,6 +6,23 @@
   <section *ngIf="user.registered">
     <img src="../assets/images/generic-plate.png" />
   </section>
+  <p>this text is<span [ngStyle]="setImportance()"> very </span>important!</p>
+  <input
+    type="radio"
+    name="preference"
+    id="importantHighlight"
+    style="transform: scale(1.5)"
+    (click)="setStylePreference('hilite')"
+  />
+  <label for="importantHighlight">Highlight</label>
+  <input
+    type="radio"
+    name="preference"
+    id="importantCaps"
+    style="transform: scale(1.5)"
+    (click)="setStylePreference('caps')"
+  />
+  <label for="importantCaps">Caps</label>
   <!--   <button (click)="addFruit()">Add a serving of fruit</button>
   <h2>Fruit Counter: <span #fruit></span></h2>
  -->
