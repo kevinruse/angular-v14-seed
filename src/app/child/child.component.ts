@@ -6,6 +6,8 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   styleUrls: ['./child.component.css'],
 })
 export class ChildComponent implements OnInit {
+  todaysPlate: Date = new Date();
+
   fruitStatus: number = 0;
 
   @Output()
