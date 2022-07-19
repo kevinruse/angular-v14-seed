@@ -25,7 +25,6 @@ export class StatusDirective implements OnInit, OnDestroy {
   hideStatus(): void {
     if (this.statusRef) {
       this.statusRef.destroy();
-      // this.statusRef = null;
     }
   }
   showStatus(): void {
