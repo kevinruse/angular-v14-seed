@@ -14,11 +14,6 @@ export class StatusDirective implements OnInit, OnDestroy {
   @Input()
   status: string = '';
 
-
-/*  @HostBinding({
-    hostPropertyName: any;
-  })*/
-
   @HostListener('click') onclick(): void {
     this.showStatus();
   }
